@@ -1,13 +1,19 @@
-<!--Template Name: justdance
-File Name: index.html
-Author Name: ThemeVault
-Author URI: http://www.themevault.net/
-License URI: http://www.themevault.net/license/-->
+
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/animate2.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="fcf-assets/css/fcf.default.css" rel="stylesheet">
@@ -31,6 +37,12 @@ License URI: http://www.themevault.net/license/-->
         <script src="js/scrolling-nav.js" type="text/javascript"></script>
         <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
         <script src="js/custom.js" type="text/javascript"></script>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
         <header>
@@ -50,9 +62,9 @@ License URI: http://www.themevault.net/license/-->
                                 <li><a href="index.html">Welcome</a></li>                               
                                 <li><a href="#about">About Me</a></li>
                                 <li><a href="#classes">Classes</a></li>
-                                <li><a href="#plan">plans</a></li>
+                                <li><a href="#plan">Pricing Packages</a></li>
                                 <li><a href="#gallery">Gallery</a></li> 
-                                <li><a href="#testimonial">Testimonials</a></li> 
+                                <li><a href="#testimonial">Feedbacks</a></li> 
                                 <li><a href="#contact">Contact Me</a></li>
                             </ul>
                         </div>
@@ -60,26 +72,32 @@ License URI: http://www.themevault.net/license/-->
                 </div>
             </nav>
             <div class="bgbanner" id="slider">
+                
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">                   
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">            
                             <div class="carousel-caption">
                                 <div class="related-website-details">
-                                    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated">Stretch yourself to reach the goals</h3>
-                                    <p data-wow-duration="1000ms" class="wow slideInRight animated">Create the best moves for you</p>
-                                    <a href="#classes" data-wow-duration="500ms" class="wow slideInLeft animated site-btn">View Details</a>
+                                    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated">Pilates And Stretching For Everyone</h3>
+                                    <p data-wow-duration="1000ms" class="wow slideInRight animated">Comfortable to take classes from home? These classes are for you!</p>
+                                    <a href="#class" data-wow-duration="500ms" class="wow slideInLeft animated site-btn">View Details</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="carousel-caption">
                                 <div class="related-website-details">
-                                    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated">You could be your own Spotlight</h3>
-                                    <p data-wow-duration="1000ms" class="wow slideInRight animated">Learn from the Best and be Professional</p>
-                                    <a href="#classes" data-wow-duration="500ms" class="wow slideInLeft animated site-btn">View Details</a>
+                                    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated">Take the first step towards a wonderful and healthy body</h3>
+                                    <p data-wow-duration="1000ms" class="wow slideInRight animated">Classes for any age and level!</p>
+                                    <a href="#class" data-wow-duration="500ms" class="wow slideInLeft animated site-btn">View Details</a>
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                            
+                      
+                        
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                             <img src="images/left-arrow.png" onmouseover="this.src = 'images/left-arrow-hover.png'" onmouseout="this.src = 'images/left-arrow.png'" alt="left">
                             <span class="sr-only">Previous</span>
@@ -88,8 +106,11 @@ License URI: http://www.themevault.net/license/-->
                             <img src="images/right-arrow.png" onmouseover="this.src = 'images/right-arrow-hover.png'" onmouseout="this.src = 'images/right-arrow.png'" alt="right">
                         </a>
                     </div>
+                    
                 </div>
+                
         </header>
+        
         <section class="about" id="about">
             <div class="container-fluid">
                 <div class="row">
@@ -103,29 +124,50 @@ License URI: http://www.themevault.net/license/-->
                                 
                                 My teaching expertise spans more than 7 years, and I've worked with many students who have excelled.
                                 <br><br>
-                                I've been dancing and researching diverse ways to movement for 15 years.
+                                 I've been dancing and researching diverse ways to movement for 15 years.
                                 During that period, I was fascinated with movement mechanics and their interrelationships.
                                 My background is wide; I've studied street dancing, contemporary, floor work, ballet, anatomy, and a variety of other physical activities.
-                                I continue to deepen my understanding of the body's labor and movement after graduating from the Department of Contemporary Dance at the Samara State Institute of Culture.
+                                I continue to deepen my understanding of the body's labor and movement after graduating from <span id="class"></span>the Department of Contemporary Dance at the Samara State Institute of Culture.
                                 Currently, I am a student at PERA, Cyprus' School of Performing Arts.
                                 
                             </p>
+                            
                         </div>
-                        <div class="row">
+                        <ul class="social-icon-list" style="margin-bottom:30px; margin-top: 0;">
+                                
+                               
+                            <li>
+                                <a href="https://instagram.com/heysiaaa_?igshid=YmMyMTA2M2Y=">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/+905391129008">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/svetlana.ilyina.311">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row" >
                             <div class="col-md-12 col-sm-6 col-xs-12 bgcolor-blue">
+
                                 <div class="about-details padding20" >
                                     <h3>Classes</h3>
-                                    <p>The classes are split into two parts, the first one is Pilates:
+                                    <p id="Pilates" style="font-size: 20px; margin-top: 20px;">The classes are split into two parts, the first one is Pilates:
                                         ​
-                                        <ul class="Pilates_list">
+                                        <ul class="Pilates_list" style="margin-top: 10px; font-size: 12px; line-height: 22px;">
                                             <li>Musculoskeletal system strengthening (coordination/balance, weight control)</li>
                                             <li>Muscle structure strengthening (shoulder joint, back, abs, arms, legs)</li>
                                             <li>whole body tone and dynamics</li>
                                         </ul>
                                         <br>
-                                        <span style="font-size: 20px;">Stretching is the second part:</span>
+                                        <span id="Pilates" style="font-size: 20px;">Stretching is the second part:</span>
                                         
-                                        <ul class="Pilates_list">
+                                        <ul class="Pilates_list" style="margin-top: 10px; font-size: 12px; line-height: 22px;">
                                             <li>Smooth muscular stretching, beginning at the neck and finishing at the feet.</li>
                                             <li>The spine and hip joint are the center of attention (back, splits)</li>
                                             <li>Steady breathing and total bodily relaxation</li>
@@ -136,10 +178,14 @@ License URI: http://www.themevault.net/license/-->
                             <div class="col-md-12 col-sm-6 col-xs-12 bgcolor-red">
                                 <div class="about-details padding20 " id="whyMe">
                                     <h3>Why Me?</h3>
-                                    <p >
-                                        My online classes are held in a friendly atmosphere, where there are two goals: to get a good result and enjoy the process. For me, this is an effective workout, so with me you will feel motivated and learn how to create it yourself.
-                                        <br><br>
-                                You will enjoy exercising with me and learn how to keep your body in excellent physical condition.
+                                    <p  style="font-size:13px;">
+                                        My online classes are held in a friendly atmosphere, where there are two goals: 
+                                        <ul style="margin-top: 10px; font-size:13px;">
+                                            <li>Get a good result</li>
+                                            <li>Love the process</li>
+                                        </ul>
+                                        <br>
+                                <span style="font-size:13px;">You will enjoy exercising with me and learn how to keep your body in excellent physical condition.</span> 
                                     </p>
                                         
                                     </div>
@@ -169,7 +215,7 @@ License URI: http://www.themevault.net/license/-->
                             <div class="classes-img">
                                 <img src="images/class3.jpg" alt="classes" class="img-responsive">
                             </div>
-                            <div class="content-details fadeIn-top fadeIn-right">
+                            <div class="content-details">
                                 <h3>Pilates</h3>
                                 <p>Pilates is not about being better than someone else - It's about being better than you used to be.</p>
                             </div>  
@@ -195,7 +241,7 @@ License URI: http://www.themevault.net/license/-->
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <div class="block-heading paddingbottom-80">
-                            <h2>Pricing Pakages</h2>
+                            <h2>Pricing Packages</h2>
                         </div>
                     </div>
                 </div>
@@ -211,7 +257,7 @@ License URI: http://www.themevault.net/license/-->
                                     
                                     <div class="col-md-6 col-sm-3 col-xs-6 marginBottom30 width-100perc">
                                         <div class="price-grid">
-                                            <div class="price-block">
+                                            <div class="    -block">
                                                 <div class="price-gd-top">
                                                     <h4>Individual - 1HR LESSON</h4>
                                                     <h3>
@@ -227,10 +273,12 @@ License URI: http://www.themevault.net/license/-->
                                                 <div class="price-list">
                                                     
                                                     <h6>
-                                                        <i class="fa fa-street-view" aria-hidden="true" style="font-size: 90px;"></i>
+                                                       Time discussed
+                                                        
+                                                    </ul>
                                                     </h6>
                                                 </div>
-                                                <a class="site-btn2" href="https://wa.me/79267905026">Contact Me</a>
+                                                <a class="site-btn2" id="siteBTN" href="https://wa.me/+905391129008">Contact Me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -251,11 +299,17 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="price-gd-bottom">
                                                 <div class="price-list">
                                                     <h6>
-                                                        <i class="fa fa-users" aria-hidden="true" style="font-size: 90px;"></i>
-
+                                                        <ul>
+                                                            <li>Tuesday - 06:00 PM</li>
+                                                            <li>Saturday - 11:00 AM</li>
+                                                            <p style="font-size: 20px; margin-top: 20px;">Time in Cyprus (GMT+3)</p>
+                                                        </ul>
+                                                        
+                                                        
+                                                        
                                                     </h6>
                                                 </div>
-                                                <a class="site-btn2" href="https://wa.me/79267905026">Contact Me</a>
+                                                <a class="site-btn2" href="https://wa.me/+905391129008">Contact Me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -271,7 +325,7 @@ License URI: http://www.themevault.net/license/-->
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <div class="block-heading paddingbottom-80">
-                            <h2>Dance Gallery</h2>
+                            <h2>Gallery</h2>
                         </div>
                     </div>
                 </div>
@@ -279,7 +333,7 @@ License URI: http://www.themevault.net/license/-->
                     <div class="gallery-list">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <!-- <ul class="nav nav-tabs">
-                                <!-- <li class="active"><a data-toggle="tab" href="#All">All</a></li>
+                                <li class="active"><a data-toggle="tab" href="#All">All</a></li>
                                 <li><a data-toggle="tab" href="#tango">Tango Ballroom</a></li>
                                 <li><a data-toggle="tab" href="#acrobat">Acrobat</a></li>
                                 <li><a data-toggle="tab" href="#ballet">Ballet Ballerina</a></li>
@@ -292,12 +346,12 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="content">
                                                 <div class="content-overlay"></div>
                                                 <div class="gallery-img">
-                                                    <img src="images/gallery1.jpg" alt="gallery" class="img-responsive">
+                                                    <img src="images/gallery12.jpg" alt="gallery" class="img-responsive">
                                                 </div>
                                                 <div class="content-details fadeIn-top fadeIn-right">
                                                     <!-- <h3>Hip Hop</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery1.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                    <a class="example-image-link img-responsive" href="images/gallery12.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                                 </div> 
                                             </div>
                                         </div>
@@ -318,12 +372,38 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="content">
                                                 <div class="content-overlay"></div>
                                                 <div class="gallery-img">
+                                                    <img src="images/gallery11.jpg" alt="gallery" class="img-responsive">
+                                                </div>
+                                                <div class="content-details fadeIn-top fadeIn-right">
+                                                    <!-- <h3>Hip Hop</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
+                                                    <a class="example-image-link img-responsive" href="images/gallery11.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 no-padding width-100perc">
+                                            <div class="content">
+                                                <div class="content-overlay"></div>
+                                                <div class="gallery-img">
                                                     <img src="images/gallery3.jpg" alt="gallery" class="img-responsive">
                                                 </div>
                                                 <div class="content-details fadeIn-top fadeIn-right">
                                                     <!-- <h3>Hip Hop</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
                                                     <a class="example-image-link img-responsive" href="images/gallery3.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 no-padding width-100perc">
+                                            <div class="content">
+                                                <div class="content-overlay"></div>
+                                                <div class="gallery-img">
+                                                    <img src="images/gallery1.jpg" alt="gallery" class="img-responsive">
+                                                </div>
+                                                <div class="content-details fadeIn-top fadeIn-right">
+                                                    <!-- <h3>Hip Hop</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
+                                                    <a class="example-image-link img-responsive" href="images/gallery1.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                                 </div> 
                                             </div>
                                         </div>
@@ -362,12 +442,12 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="content">
                                                 <div class="content-overlay"></div>
                                                 <div class="gallery-img">
-                                                    <img src="images/gallery3.jpg" alt="gallery" class="img-responsive">
+                                                    <img src="images/gallery13.jpg" alt="gallery" class="img-responsive">
                                                 </div>
                                                 <div class="content-details fadeIn-top fadeIn-right">
                                                     <!-- <h3>Tango Ballroom</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery3-3.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                    <a class="example-image-link img-responsive" href="images/gallery13.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                                 </div> 
                                             </div>
                                         </div>
@@ -375,12 +455,12 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="content">
                                                 <div class="content-overlay"></div>
                                                 <div class="gallery-img">
-                                                    <img src="images/gallery5.jpg" alt="gallery" class="img-responsive">
+                                                    <img src="images/gallery14.jpg" alt="gallery" class="img-responsive">
                                                 </div>
                                                 <div class="content-details fadeIn-top fadeIn-right">
                                                     <!-- <h3>Tango Ballroom</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery5-5.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                    <a class="example-image-link img-responsive" href="images/gallery14.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                                 </div> 
                                             </div>
                                         </div>
@@ -392,12 +472,12 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="content">
                                                 <div class="content-overlay"></div>
                                                 <div class="gallery-img">
-                                                    <img src="images/gallery4.jpg" alt="gallery" class="img-responsive">
+                                                    <img src="images/gallery15.jpg" alt="gallery" class="img-responsive">
                                                 </div>
                                                 <div class="content-details fadeIn-top fadeIn-right">
                                                     <!-- <h3>Acrobat</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery4-4.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                    <a class="example-image-link img-responsive" href="images/gallery15.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                                 </div> 
                                             </div>
                                         </div>
@@ -405,51 +485,19 @@ License URI: http://www.themevault.net/license/-->
                                             <div class="content">
                                                 <div class="content-overlay"></div>
                                                 <div class="gallery-img">
-                                                    <img src="images/gallery6.jpg" alt="gallery" class="img-responsive">
+                                                    <img src="images/gallery14.jpg" alt="gallery" class="img-responsive">
                                                 </div>
                                                 <div class="content-details fadeIn-top fadeIn-right">
                                                     <!-- <h3>Acrobat</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery6-6.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                    <a class="example-image-link img-responsive" href="images/gallery14.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                                                 </div> 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="ballet" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 col-xs-6 no-padding width-100perc">
-                                            <div class="content">
-                                                <div class="content-overlay"></div>
-                                                <div class="gallery-img">
-                                                    <img src="images/gallery2.jpg" alt="gallery" class="img-responsive">
-                                                </div>
-                                                <div class="content-details fadeIn-top fadeIn-right">
-                                                    <!-- <h3>Ballet Ballerina</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery2-2.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="hip" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 col-xs-6 no-padding width-100perc">
-                                            <div class="content">
-                                                <div class="content-overlay"></div>
-                                                <div class="gallery-img">
-                                                    <img src="images/gallery1.jpg" alt="gallery" class="img-responsive">
-                                                </div>
-                                                <div class="content-details fadeIn-top fadeIn-right">
-                                                    <!-- <h3>Hip Hop</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean suscipit faucibus.</p> -->
-                                                    <a class="example-image-link img-responsive" href="images/gallery1-1.jpg" data-lightbox="gallery"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
+                                
                             </div>
                         </div>
                     </div>
@@ -655,7 +703,7 @@ License URI: http://www.themevault.net/license/-->
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://wa.me/79267905026">
+                                            <a href="https://wa.me/+905391129008">
                                                 <i class="fa fa-whatsapp"></i>
                                             </a>
                                         </li>
@@ -672,6 +720,7 @@ License URI: http://www.themevault.net/license/-->
                 </div>
             </div>
         </section>
+        <div id="google_translate_element" class="float -right">hee</div>
         <footer>
             <div class="copyright bgcolor-red">
                 <!--Do not remove Backlink from footer of the template. To remove it you can purchase the Backlink-->
@@ -680,6 +729,21 @@ License URI: http://www.themevault.net/license/-->
         </footer>
         <script src="js/wow.min.js"></script>
         <script src="js/mislider.js" type="text/javascript"></script>
+        <script type= "text/javascript">
+            function googleTranslateElementInit () {
+                    new google.translate.TranslateElement
+                    ({
+                        pageLanguage: 'ar',
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                    },
+                    
+                        'google_translate_element '
+                    );
+            }
+                </script>
+                <script type="text/javascript"
+                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            </script>
         <script>
                                                 var wow = new WOW({
                                                     boxClass: 'wow',

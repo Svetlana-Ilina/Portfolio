@@ -1,10 +1,3 @@
-/*
-Template Name: justdance
-File Name: style.css
-Author Name: ThemeVault
-Author URI: http://www.themevault.net/
-License URI: http://www.themevault.net/license/
-*/
 
 html {
     margin: 0;
@@ -18,6 +11,11 @@ body {
     font-size:100%;
     letter-spacing: 1px;
 }
+
+#Pilates{
+    font-size: 16px;
+}
+
 textarea:focus, input:focus, select:focus, select:active{
     outline: none;
     box-shadow:none;
@@ -247,10 +245,10 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     margin-top: 6px;
 }
 .about-para > p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
     text-align: justify;
-    max-height: 40rem;
+    max-height:40em;
     overflow: hidden;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
@@ -265,6 +263,9 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     font-weight: 600;
     margin-top: 15px;
 }
+#siteBTN{
+    margin-top: 90px;
+}
 .site-btn2::after{
     border-bottom: 1px solid #1F1B18;
     content: "";
@@ -277,37 +278,16 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
 .about-details{
     color:#fff;
 }
-
-#whyMe{
-    font-size: 20px;
-}
 .about-details > p {
-    font-size: 20px;
+    font-size: 12px;
     line-height: 22px;
     margin-top: 12px;
-    max-height: 16em;
+    max-height: 20em;
     overflow: hidden;
     overflow-wrap: break-word;
-    margin-bottom: 20px;
-    
+    text-align: center;
     text-overflow: ellipsis;
 }
-
-.about-details > span{
-    margin-top: 90px;
-}
-.Pilates_list{
-    margin-top: 10px;
-    font-size: 15px;
-    
-}
-
-.Pilates_list li{
-    margin-top: 5px;
-    list-style: circle;
-    list-style-position: inside;
-}
-
 .bgcolor-red .about-details h3{
     color: #1F1B18;
 }
@@ -324,7 +304,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     top: 0;
     bottom: 0;
     right: 0;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
@@ -343,7 +323,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     width: 100%;
     top: 50%;
     left: 50%;
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -365,12 +345,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     color: #fff;
     font-size: 11px;
 }
-.fadeIn-top{
-    top: 20%;
-}
-.fadeIn-right{
-    left: 80%;
-}
+
 .price-table {
     left: 0;
     position: absolute;
@@ -413,6 +388,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     background: rgba(255, 255, 255, 0.13) none repeat scroll 0 0;
     padding: 1em 0;
     text-align: center;
+    max-height: 40em;
 }
 .price-list > ul li {
     display: inline;
@@ -424,7 +400,9 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
 .price-list h6 {
     font-size: 30px;
     margin: 10px 0;
+
 }
+
 .trainer-details > h4 {
     color: #e2001a;
     font-size: 22px;
@@ -487,9 +465,8 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     font-size: 36px;
 }
 .client-info img {
-    width: 10%;
+    width: 11%;
 }
-
 .client-info > p {
     font-size: 15px;
     margin: 20px 0;
@@ -585,7 +562,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     display: inline;
 }
 .social-icon-list a{
-    background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
     border: 1px solid #fff;
     border-radius: 50%;
     color: #fff;
@@ -595,6 +572,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     line-height: 50px;
     margin-right: 10px;
     width: 50px;
+    
 }
 .social-icon-list a:hover{
     background: #e2001a;
