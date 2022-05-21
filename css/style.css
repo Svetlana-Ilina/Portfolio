@@ -13,7 +13,8 @@ body {
 }
 
 #Pilates{
-    font-size: 16px;
+    font-size: 20px;
+    
 }
 
 textarea:focus, input:focus, select:focus, select:active{
@@ -248,7 +249,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     font-size: 13px;
     line-height: 24px;
     text-align: justify;
-    max-height:40em;
+    max-height:70em;
     overflow: hidden;
     overflow-wrap: break-word;
     text-overflow: ellipsis;
@@ -309,13 +310,40 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
 }
+
+.gallery-container{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+ 
+  padding: 15px;
+}
+
+.gallery-container img {
+    width: 100%;
+    display: block;
+    
+    transition: all 100ms ease-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.04);
+    
+    filter: grayscale(0);
+  }
+  
 .content:hover .content-overlay{
     opacity: 1;
 }
 .classes-img img{
     width: 100%;
 }
+
+.PS-details{
+    background-color: rgba(0, 0, 0, 0.6);
+}
 .content-details {
+    
     position: absolute;
     text-align: center;
     padding-left: 1em;
@@ -332,6 +360,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
     transition: all 0.3s ease-in-out 0s;
 }
 .content:hover .content-details{
+    
     top: 50%;
     left: 50%;
     opacity: 1;
@@ -343,7 +372,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
 }
 .content-details p{
     color: #fff;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .price-table {
@@ -364,7 +393,7 @@ h1,h2,h3,h4,h5,h6, .navbar-brand, .gallery-list .nav-tabs{
 .price-gd-top h4 {
     background: #1F1B18;
     color: #fff;
-    font-size: 1.4em;
+    font-size: 15px;
     letter-spacing: 1px;
     padding: 0.4em 1em;
 }
